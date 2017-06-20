@@ -1,9 +1,10 @@
 size = int(input('Введите размер списка: '))
-list_nuber = []
+list_number = []
 print('Введите элементы списка')
 for i in range(size):
-	num = int(input())
-	list_nuber.append(num)
+	num = input()
+	list_number.append(num)
+print(list_number)
 print('---------')
-for i in range(size):
-	print(list_nuber[i])
+for i in list_number:
+	print(int(i))

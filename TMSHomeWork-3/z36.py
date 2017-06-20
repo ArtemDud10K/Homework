@@ -18,9 +18,9 @@ for i in range(20):
 			t.circle(20)
 			t.right(90)
 		if mist == 2:
-			t.fd(50)
-			t.right(35)
-			t.fd(35)
+			t.fd(40)
+			#t.right(35)
+			t.fd(5)
 		if mist == 3:
 			t.fd(50)
 			t.right(35)

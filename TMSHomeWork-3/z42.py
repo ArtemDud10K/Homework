@@ -6,6 +6,5 @@ y1 = a ** 1/2
 m = 0
 while abs(y1 - y) > eps:
 	y = (x + a/2)/2
-	x += 1
-	m += 1 
+	x += 1 
 print(y, m) 

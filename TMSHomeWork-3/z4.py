@@ -1,18 +1,16 @@
 import turtle
-
 first = 30
 second = first*2
-n_angle = 7
 step = 50
 t = turtle.Turtle()
-t.speed(150)
+t.speed(400)
 while True:
 	t.clear()
 	t.penup()
 	t.goto(0, 0)
 	t.right(t.heading())
 	t.pendown()
-	for i in range(n_angle):
+	for i in range(5):
 		t.forward(step)
 		t.left(first)
 		t.forward(step)
@@ -21,6 +19,4 @@ while True:
 		break
 	first += 1
 	second = first*2
-
-print(first)
-print(second)
+turtle.mainloop()
