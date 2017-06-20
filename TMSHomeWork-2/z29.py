@@ -1,12 +1,17 @@
+points = []
 name1 = input('Введите имя первого игрока\n')
-points1 = input('Введите количество очков первого игрока\n')
+point1 = int(input('Введите количество очков первого игрока\n'))
+points.append(point1)
 name2 = input('Введите имя второго игрока\n')
-points2 = input('Введите количество очков второго игрока\n')
+point2 = int(input('Введите количество очков второго игрока\n'))
+points.append(point2)
 name3 = input('Введите имя третьего игрока\n')
-points3 = input('Введите количество очков третьего игрока\n')
-if points1 > points2 and points1 > points3:
+point3 = int(input('Введите количество очков третьего игрока\n'))
+points.append(point3)
+#print(points)
+if point1 == max(points):
 	print('Поздравляю', name1)
-if points2 > points1 and points2 > points3:
+if point2 == max(points):
 	print('Поздравляю', name2)
-if points3 > points1 and points3 > points2:
+if point3 == max(points):
 	print('Поздравляю', name3)

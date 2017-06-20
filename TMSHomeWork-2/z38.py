@@ -1,4 +1,4 @@
-number = input('Введите число для перевода\n')
+number = int(input('Введите число для перевода\n'))
 sys = int(input('Введите числом систему для перевода(2,8,16)\n'))
 if sys == 2:
 	number = int(number)

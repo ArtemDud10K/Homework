@@ -1,5 +1,5 @@
 from datetime import datetime 
-birthday = input('Укажите дату вашего рождения в этом году в формате гггг.дд.мм\n') 
+birthday = input('Укажите дату вашего рождения в этом году в формате 2017.дд.мм\n') 
 today =  datetime.date(datetime.now())
 birthday1 = datetime.date(datetime.strptime(birthday, '%Y.%d.%m'))#преобразование строки в дату
 speed = int(input('Введите вашу скорость\n'))
