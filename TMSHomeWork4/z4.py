@@ -2,7 +2,7 @@ def all_(l):
 	if len(l) == 0:
 		return True
 	for i in l:
-		if i != False:
+		if i not False:
 			return True
 		else:
 			return False
