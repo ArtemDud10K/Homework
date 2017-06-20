@@ -1,8 +1,9 @@
 def fib(n):
-	if n == 0 or n == 1:
-		return 1
-	return fib(n - 1) + fib(n - 2)
-
+	a, b = 0, 1
+	while a < n:
+		yield a
+		a, b = b, b + a
 
 #проверка
-print(fib(3))
+for i in fib(100):
+	print(i)

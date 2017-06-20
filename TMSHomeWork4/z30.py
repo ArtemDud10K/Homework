@@ -1,10 +1,11 @@
 import time
 def func():
+	print('Hello World!')
+
+def func1():
 	time.sleep(2)
-	def func1():
-		while True:
-			time.sleep(2)
-			print('Hello!')	
+	func()
+
+while True:
 	func1()
 
-func()

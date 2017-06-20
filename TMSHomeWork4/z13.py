@@ -1,11 +1,10 @@
 def sort_dict(d):
-	l = []
+	max_v = max(d.values())
 	for i in d:
-		max1 = max(d)
-	if max1 in d:
-		return(max1, d.setdefault(max1))
-	else:
-		return print('не сработало')
+		if d.get(i) == max_v:
+			return (i, max_v)
+	
+
 #проверка
-d = {1:'a', 2:'b', 3:'c'}
+d = {'a': 3, 'b': 4}
 print(sort_dict(d))
