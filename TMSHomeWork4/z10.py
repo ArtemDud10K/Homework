@@ -1,6 +1,6 @@
 def reverse_ (l):
 	l1 = []
-	for i in l[::-1]:
+	for i in reversed(l):
 		l1.append(i)
 	return l1
 	
