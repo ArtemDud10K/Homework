@@ -1,30 +1,54 @@
 import string
-password = input('Введите пароль\n')
-indecators = []
-ind = False
+password = input('Введите пароль: ')
+indecators_low = []
+indecators_up = []
+indecators_punc = []
+indecators_dig = []
+length = 0
 for i in password:
+	length += 1
 	if i in string.ascii_lowercase:
-		ind = True
-		indecators.append(ind)
-	else:
-		indecators.append(ind)
+		indecators_low.append(True)
+for i in password:
 	if i in string.ascii_uppercase:
-		ind = True
-		indecators.append(ind)
-	else:
-		indecators.append(ind)
-	if i in string.digits: 
-		ind = True
-		indecators.append(ind)
-	else:
-		indecators.append(ind)
+		indecators_up.append(True)
+for i in password:
 	if i in string.punctuation:
-		ind = True
-		indecators.append(ind)
-	else:
-		indecators.append(ind)
-print(indecators)
-if False in indecators:
-	print('Придумайте другой пароль')
-else:
-	print('Удачный пароль')
+		indecators_punc.append(True)
+for i in password:
+	if i in string.digits:
+		indecators_dig.append(True)		
+if len(indecators_low) == 0:
+	print('нет маленьких букв')
+if len(indecators_up) == 0:
+	print('нет больших букв')
+if len(indecators_punc) == 0:
+	print('нет специальных символов')
+if len(indecators_dig) == 0:
+	print('нет чисел')
+if length <= 6:
+	print('слишком короткий пароль')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#if length < 6:
+#	print('Маленький пароль')	
+
