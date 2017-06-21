@@ -28,27 +28,3 @@ if len(indecators_dig) == 0:
 	print('нет чисел')
 if length <= 6:
 	print('слишком короткий пароль')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#if length < 6:
-#	print('Маленький пароль')	
-
